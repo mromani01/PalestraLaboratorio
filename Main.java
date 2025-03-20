@@ -14,31 +14,13 @@ public class Main {
         System.out.println(" ");
         System.out.println("=== ABBONATI - TUTTI ===");
         for (int i = 0; i < 6; i++) {
-            if (persone[i] instanceof Atleti) {
-                if (((Atleti) persone[i]).disciplina == TipoDisciplina.INTERNAZIONALE) {
-                    System.out.println(persone[i]);
-                } else {
-                    System.out.println(persone[i]);
-                }
-            } else if (persone[i] instanceof Studente) {
-                if (((Studente) persone[i]).tipoCorso == TM.LT) {
-                    System.out.println(persone[i]);
-                } else {
-                    System.out.println(persone[i]);
-                }
-            } else {
-                System.out.println(persone[i]);
-            }
+            System.out.println(persone[i]);
         }
         System.out.println(" ");
         System.out.println("=== ABBONATI - STUDENTI ===");
         for (int i = 0; i < 6; i++) {
             if (persone[i] instanceof Studente) {
-                if (((Studente) persone[i]).tipoCorso == TM.LT) {
-                    System.out.println(persone[i]);
-                } else {
-                    System.out.println(persone[i]);
-                }
+                System.out.println(persone[i]);
             }
         }
 
@@ -46,11 +28,7 @@ public class Main {
         System.out.println("=== ABBONATI - ATLETI ===");
         for (int i = 0; i < 6; i++) {
             if (persone[i] instanceof Atleti) {
-                if (((Atleti) persone[i]).disciplina == TipoDisciplina.INTERNAZIONALE) {
-                    System.out.println(persone[i]);
-                } else {
-                    System.out.println(persone[i]);
-                }
+                System.out.println(persone[i]);
             }
         }
     }
